@@ -12,11 +12,12 @@
 2. Create the manifest list (multi-arch name followed by individual image names):
 
 ```
-docker manifest create `
- diamol/ch02-hello-diamol:1.0 `
- diamol/ch02-hello-diamol:windows-x64 `
- diamol/ch02-hello-diamol:linux-x64 `
- diamol/ch02-hello-diamol:linux-amd64
+docker manifest create \
+ diamol/ch02-hello-diamol:1.0 \
+ diamol/ch02-hello-diamol:windows-amd64 \
+ diamol/ch02-hello-diamol:linux-arm64 \
+ diamol/ch02-hello-diamol:linux-amd64 \
+ diamol/ch02-hello-diamol:linux-arm
 ```
 
 3. Inspect & confirm archs:
